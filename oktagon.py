@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 class Oktagon:
     def __init__(self, a): 
         self.k = (1+math.sqrt(2))
-        self.corner = 120
+        self.corner = 135
         self.a = a
 
     def plo(self): #Находим площадь октагона
@@ -33,7 +33,7 @@ class Oktagon:
         print(f'Радиус вписанной окружности {self.small_r}')
         print(f'Площадь вписанной окружности {self.small_s}')
     
-    def ris(self): #Выводим графики на экран
+    def pic(self): #Выводим графики на экран
         self.square = 2*self.k*self.a**2
         self.small_r = math.sqrt(self.square/8/(math.sqrt(2)-1))
         self.big_r = math.sqrt(self.square/2/math.sqrt(2))

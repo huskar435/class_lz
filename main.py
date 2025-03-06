@@ -6,7 +6,7 @@ def main(): #Создаем функцию
     first.per()
     first.opis_okr()
     first.vpis_okr()
-    first.ris()
+    first.pic()
 
 if __name__ == '__main__': 
     main() 
