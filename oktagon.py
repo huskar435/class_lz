@@ -1,4 +1,4 @@
-#импортируем библиотеки
+#Импортируем библиотеки
 import math
 import matplotlib.patches
 import matplotlib.pyplot as plt
