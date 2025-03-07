@@ -38,12 +38,12 @@ class Oktagon:
         self.small_r = math.sqrt(self.square/8/(math.sqrt(2)-1))
         self.big_r = math.sqrt(self.square/2/math.sqrt(2))
 
-        plt.xlim(-20, 20)
+        plt.xlim(-20, 20) #Устанавливаем пределы на осях и добавляем сетку 
         plt.ylim(-20, 20)
         plt.grid()
         axes = plt.gca()
 
-        polygon_1 = matplotlib.patches.Polygon([(self.small_r, self.a/2), 
+        polygon_1 = matplotlib.patches.Polygon([(self.small_r, self.a/2), #Задаем координаты вершин многоугольника
                                                 (self.small_r, -self.a/2),
                                                 (self.a/2, -self.small_r),
                                                 (-self.a/2, -self.small_r),
@@ -51,7 +51,7 @@ class Oktagon:
                                                 (-self.small_r, self.a/2), 
                                                 (-self.a/2, self.small_r), 
                                                 (self.a/2, self.small_r)], 
-                                                fill = False, color = 'green')
+                                                fill = False, color = 'green') #Сделали так чтобы у многоугольник не был заполнен цветом,а была только граница и закрасили ее в зеленый
 
         circle1 = matplotlib.patches.Circle((0, 0), radius=self.big_r, fill = False, color = 'red')  #Описанная окружность
         circle2 = matplotlib.patches.Circle((0, 0), radius=self.small_r, fill = False, color = 'black') #Вписанная окружность
