@@ -60,5 +60,7 @@ class Oktagon:
         axes.add_patch(polygon_1)
         plt.show()
 
+
+    #Деструктор
     def __del__(self):
         print('Октагон удален')
